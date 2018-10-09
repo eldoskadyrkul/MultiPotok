@@ -1,3 +1,4 @@
+import javafx.application.Application;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import port.*;
@@ -13,6 +14,7 @@ public class MainMenu {
         System.out.println("Главное меню:");
         System.out.println("1. Порт");
         System.out.println("2. Маленькая библиотека");
+        System.out.println("3. Выход из программы");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите пункт меню:");
         int x = scanner.nextInt();
@@ -22,6 +24,9 @@ public class MainMenu {
                 break;
             case 2:
                 small_libs();
+                break;
+            case 3:
+                System.exit(0);
                 break;
                 default:
                     System.out.println("Введите пункт меню еще рвз");
